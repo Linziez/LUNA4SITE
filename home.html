@@ -195,18 +195,4 @@ setInterval(() => {
     timebg.style.backgroundImage = 'url("./img/bg/dark.jpg")';
 }
     </script>
-    <script>
-        settheme()
-         if (localStorage.getItem('bgurl')===null){
-            document.getElementById("stylebg").style="background-image: url('./img/bg/light.jpg')"
-        }else{
-            document.getElementById("stylebg").style="background-image: url('" + localStorage.getItem('bgurl') + "')"
-        }
-        
-        document.getElementById("themestyle").setAttribute("href", `css/${localStorage.getItem("theme")}.css`);
-        toggle.addEventListener("click" , () =>{
-    sidebar.classList.toggle("close");
-})
-    </script>
-</body>
-</html>
+    
