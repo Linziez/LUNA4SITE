@@ -1,21 +1,17 @@
 :root {
-  --body-color: #3a3b3c;
-  --gradient-1: #ff8a00;
-  --gradient-2: #da1b60;
-  --color-1: #ffffff;
-  --color-2: #e0e0e0;
+  --gradient-1: #3a3b3c;
 }
 
 body {
   overflow: hidden;
-  background-color: var(--body-color);
+  background-color: var(--gradient-1);
 }
 
 main {
   width: 100%;
   margin-top: 24vh;
   height: 50vh;
-  background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
+  background: linear-gradient(45deg, var(--gradient-1), var(--gradient-1));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +23,7 @@ h1 {
   font-size: 15vw;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  color: var(--color-1);
+  color: #ffffff; /* You can set the text color as needed */
   margin-bottom: 1rem;
   z-index: 9;
   line-height: 26vh;
@@ -39,6 +35,7 @@ p {
   font-size: 2vw;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  color: var(--color-2);
+  color: #e0e0e0; /* You can set the text color as needed */
   z-index: 9;
 }
+
