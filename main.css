@@ -35,3 +35,8 @@ p {
     color: var(--color-2);
     z-index: 9;
 }
+code
+:root {
+  --body-color: #3a3b3c;
+  /* Add other CSS variables here if needed */
+}
