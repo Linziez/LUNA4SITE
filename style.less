@@ -3,7 +3,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+:root {
+  --bg: #24273a;
+  --text-color: #cad3f5;
+  --surface-0: #363a4f;
+  --surface-1: #494d64;
+  --mantle-bg: #1e2030;
+  --font-family: "JetBrains Mono", monospace;
+  --fonts-classic: "Roboto", "Lato", Arial, Helvetica, sans-serif;
+  --brand-color: #f22b77;
+}
 
+sub {
+  color: var(--surface-0);
+}
 
 .search-btn {
   float: right;
@@ -113,7 +126,10 @@ button {
   border: none;
 }
 
-
+main {
+  margin-left: calc(64px + 20px);
+  margin-right: 20px;
+}
 
 .card-wrapper {
   display: inline-block;
