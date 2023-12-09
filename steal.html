@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="themes.css">
+    <title>IR Games</title>
+    <link rel="icon" type="image/x-icon" href="Pictures/irgames.png">
+    <meta name="description" content="Unblocked games, movies, scripts & more!">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8Q5HYCKBBB"></script>
+    <script> window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);} gtag('js', new Date());gtag('config', 'G-8Q5HYCKBBB');</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2404879945245367"crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2404879945245367"crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2404879945245367"crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <script src="games.js"></script>
+  </head>
+  <body onload="loadSearchData()">
+    <header>
+      <div class="container">
+        <a class="logo" href="/"><img width="200px" src="/Pictures/HeaderLogo.png" alt="logo"></a>
+        <input id="searchbar" autocomplete="off" onkeyup="search()" type="text"\n name="search" placeholder="Search...">
+        <div id="list">
+        </div>
+      </div>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">Games</a></li>
+          <li><a href="animations.html">Animations</a></li>
+          <li><a href="scripts.html">Scripts</a></li>
+          <li><a href="sitemap.html">More</a></li>
+          <a class="Options"><img onclick="document.getElementById('popup').style.display = 'block';document.getElementById('sharepopup').style.display = 'none';" src="Pictures/Options.png"></a>
+        </ul>
+      </nav>
+    </header>
+    <div id="popup">
+      <img class="Close" onclick="document.getElementById('popup').style.display = 'none';" src="Pictures/Close.png">
+      <br>
+      <h1>Settings</h1>
+
+      <div class="settingsList">
+
+      <div class="settingsBlock">
+      <h2 class="settingsheader" target="_blank" href="https://twitter.com/IRunblocked">Tab Cloaker</h2>
+      <span class="inputcontainer">
+      <div><input id="title" class="input" placeholder="Set Page Title..." onkeyup="setTitle(this.value)"></div>
+      <div><button onclick="resetTab()">Reset</button></div>
+      </span>
+      <br><br>
+      <h2 class="settingsheader" target="_blank" >Favicon Cloaker</h2>
+      <span class="inputcontainer">
+      <div><input id="icon" class="input" placeholder="Set Page Favicon..." onkeyup="setFavicon(this.value.trim())"></div>
+      <div><button onclick="resetTab()">Reset</button></div>
+      </span>
+      </div>
+
+      <div class="settingsBlock">
+      <h2 class="settingsheader" target="_blank" >Panic Button</h2><br>
+      <form>
+      <span class="inputcontainer">
+        <label for="website-input"></label>
+        <div><input  type="text" id="website-input" placeholder="Set Your Panic Site!" required></div>
+        <select id="key-select" required>
+          <option value="" disabled selected>Select key</option>
+          <option value="a">a</option>
+          <option value="b">b</option>
+          <option value="c">c</option>
+          <option value="d">d</option>
+          <option value="e">e</option>
+          <option value="f">f</option>
+          <option value="g">g</option>
+          <option value="Backspace">Backspace</option>
+          <option value="Escape">Escape</option>
+          <option value="Control">Ctrl</option>
+          <!-- Add more options as needed -->
+        </select>
+      </form>
+      </span>
+      </div>
+
+      <div class="settingsBlock">
+        <h2 class="settingsheader" target="_blank" >Themes</h2><br>
+        <button class="themesbtn" onclick="setTheme('default')">Default</button>
+        <button class="themesbtn" onclick="setTheme('light')">Light</button>
+        <button class="themesbtn" onclick="setTheme('dark')">Dark</button>
+        <br>
+        <button class="themesbtn" onclick="setTheme('amoled')">AMOLED</button>
+        <button class="themesbtn" onclick="setTheme('cherry')">Cherry</button>
+        <button class="themesbtn" onclick="setTheme('indigo')">Indigo</button>
+        <br>
+        <button class="themesbtn" onclick="setTheme('harley')">Harley</button>
+        <button class="themesbtn" onclick="setTheme('joker')">Joker</button>
+        <button class="themesbtn" onclick="setTheme('jesse')">Pinkman</button>
+        </div>
+
+      <div class="settingsBlock">
+      <div class="cloakingDiv"><p>Open Blank Cloaking Tab:</p><button id="toggleButton">Open</button></div>
+      </div>
+
+      <div class="settingsBlock">
+        <div class="cloakingDiv">
+          <label class="toggle-switch-label" for="toggleCheckbox">Enable Clickoff Cloaker:</label>
+          <label class="toggle-switch">
+            <input type="checkbox" id="toggleCheckbox">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+    </div>
+
+      <div class="settingsBlock"><h2>Coming Soon<br>suggest in discord!</h2></div>
+
+    </div>
+    <iframe src="Login/login.html" scrolling="no">
+    </iframe>
+    </div>
+    <div id="sharepopup">
+      <img
+        class="Close"
+        onclick="document.getElementById('sharepopup').style.display = 'none';"
+        src="Pictures/Close.png"
+      />
+      <br />
+      <h1>Share Our Site</h1>
+      <h2>Share On</h2>
+    
+      <button style="min-width: 120px;width:120px" onclick="shareOnReddit()">Reddit<img style="width: 20px;top:2px;left:4px;position:relative;" src="Pictures/Reddit.png"></button>
+    
+      <script>
+        function shareOnReddit() {
+          var url = "https://www.reddit.com/submit";
+          var title =
+            "Come check out this awesome unblocked gaming Website: IRunblocked!";
+    
+          var encodedUrl = encodeURIComponent(
+            "I played hundreds of games and watched entertaining animations over at https://irunblocked.com"
+          );
+          var encodedTitle = encodeURIComponent(title);
+    
+          var redditShareUrl =
+            url + "?url=" + encodedUrl + "&title=" + encodedTitle;
+    
+          window.open(redditShareUrl, "_blank");
+        }
+      </script>
+    
+      <button style="min-width: 120px;width:120px" onclick="shareOnFacebook()">Facebook<img style="width: 20px;top:2px;left:2px;position:relative;" src="Pictures/Facebook.png"> </button>
+    
+      <script>
+        function shareOnFacebook() {
+          var url = "https://irunblocked.com";
+          var title = " IRunblocked Unblocked Games";
+          var description = "I played hundreds of games and watched entertaining animations over at https://irunblocked.com";
+    
+          var encodedUrl = encodeURIComponent(url);
+          var encodedTitle = encodeURIComponent(title);
+          var encodedDescription = encodeURIComponent(description);
+    
+          var facebookShareUrl =
+            "https://www.facebook.com/sharer/sharer.php?u=" +
+            encodedUrl +
+            "&quote=" +
+            encodedTitle +
+            "&description=" +
+            encodedDescription;
+    
+          window.open(facebookShareUrl, "_blank");
+        }
+      </script>
+
+      <button style="min-width: 120px;width:120px" onclick="shareOnTwitter()">Twitter<img style="width: 20px;top:3px;left:4px;position:relative;" src="Pictures/twitter.png"></button>
+
+      <script>
+        function shareOnTwitter() {
+          var text = "I played on this website called irunblocked.com and was able to choose from over 350+ games AND animations, scripts, proxies, and so many more things!";
+    
+          var encodedText = encodeURIComponent(text);
+
+          var twitterShareUrl = "https://twitter.com/intent/tweet?text=" + encodedText;
+
+          window.open(twitterShareUrl, "_blank");
+        }
+      </script>
+    </div>
+<h1>Games</h1>
+    <div>
+      <span class="inputcontainer">
+        <div><input type="text" id="searchbarbottom" onkeyup="search_game()" name="search" placeholder="Find Games..."></div>
+        
+        <select id="category" name="category" onchange="showImages()">
+          <option value="">All Games</option>
+          <option value="driving">Driving Games</option>
+          <option value="emulated">Emulated Games</option>
+          <option value="flash">Flash games</option>
+          <option value="incremental">Incremental Games</option>
+          <option value="io">.io Games</option>
+          <option value="multiplayer">Multiplayer Games</option>
+          <option value="music">Music Games</option>
+          <option value="puzzle">Puzzle Games</option>
+          <option value="singleplayer">Singleplayer Games</option>
+          <option value="towerdefense">Tower Defense Games</option>
+          <option value="twoplayer">Two Player Games</option>
+          <option value="eagler">Eaglercraft Clients</option>
+        </select>
+
+        <select style="width: 45px;" id="categoryLetter" name="categoryLetter" onchange="showImagesLetter()">
+          <option value="">All</option>
+          <option value="#">#</option>
+          <option value="a">A</option>
+          <option value="b">B</option>
+          <option value="c">C</option>
+          <option value="d">D</option>
+          <option value="e">E</option>
+          <option value="f">F</option>
+          <option value="g">G</option>
+          <option value="h">H</option>
+          <option value="i">I</option>
+          <option value="j">J</option>
+          <option value="k">K</option>
+          <option value="l">L</option>
+          <option value="m">M</option>
+          <option value="n">N</option>
+          <option value="o">O</option>
+          <option value="p">P</option>
+          <option value="q">Q</option>
+          <option value="r">R</option>
+          <option value="s">S</option>
+          <option value="t">T</option>
+          <option value="u">U</option>
+          <option value="v">V</option>
+          <option value="w">W</option>
+          <option value="x">X</option>
+          <option value="y">Y</option>
+          <option value="z">Z</option>
+        </select>
+      </span>
+      
+    </div>
+
+    <div id="gameContainer"></div>
+
+    <script> function embedGame(gameUrl) {var gameContainer = document.getElementById('gameContainer');gameContainer.innerHTML = '<iframe referrerpolicy="origin" allowfullscreen class="fullScreenGame" position="fixed" width="100%" height="100%" src="' + gameUrl + '"></iframe> <div class="Gamesinfo"><h1 id="gametitle">null</h1><button style="bottom:38px;cursor: url(/Pictures/link.cur), auto;" class="fullscreenbtn" onclick="toggleFullscreen();"><img width="20px" src="/Pictures/Fullscreen.png"></button><button style="bottom:38px;margin-right:20px;cursor: url(/Pictures/link.cur), auto;" class="fullscreenbtn" onclick="document.getElementById(`sharepopup`).style.display = `block`;document.getElementById(`popup`).style.display = `none`;""><img style="width:55px" src="/Pictures/Share.png"></button><button style="margin-left:15px;padding:0;width:20px;min-width:0px;cursor: url(/Pictures/link.cur), auto;" class="commentsbtn" onclick="openComments();"><img width="20px" src="/Pictures/Comments.png"></button></div><div style="display:none;background-color:white;padding:0px;" id="commentContainer"><iframe id=`cmtiframe` style="background-color:transparent;overflow:auto;border-radius:20px;margin:0px;" src="Comments/index.html"></iframe></div><div style="Border-Radius:25px;height: fit-content;" class="Gamesinfo"><h2 style="font-size:30px;margin-top:2px;margin-left:12px">Developer</h2><p id="developer" style="text-align:left;margin-left:12px;font-family:Fredoka;font-weight:100;">null</p><h2 style="font-size:30px;margin-top:2px;margin-left:12px">Instructions</h2><p id="instructions" style="text-align:left;margin-left:12px;font-family:Fredoka;font-weight:100;">null</p></div>';return false;}</script>
+    
+    <div id="gameContainer"></div>
+    <script> 
+    function openComments() {
+
+    if (document.getElementById('commentContainer').style.display == 'none') {
+      document.getElementById('commentContainer').style.display = 'inline-block'
+    } else {
+      document.getElementById('commentContainer').style.display = 'none'
+    }
+  }
+    </script>
+    
+  
+    <script>
+      function toggleFullscreen() {
+      let elem = document.querySelector("#gameContainer iframe");
+      
+      if (!document.fullscreenElement) {
+      elem.requestFullscreen().catch((err) => {
+      alert(
+        `Error attempting to enable fullscreen mode: ${err.message} (${err.name})`
+      );
+      });
+      } else {
+      document.exitFullscreen();
+      }
+      }
+    </script>
+    <br>
+    <span class="games">
+
+      <div class="fullscreendiv" data-letter="#" data-category="emulated">
+        <button onclick="embedGame('/File-Games/Emulated-Games/NES/1942/index.html');
+        document.getElementById('gametitle').innerHTML = '1942';
+        document.getElementById('developer').innerHTML = 'Capcom';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move, Use X to fire the cannons';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/1942.jpg"></button>
+        <p>1942</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="#" data-category="puzzle">
+        <button onclick="embedGame('/File-Games/Gfiles/2048/index.html');
+        document.getElementById('gametitle').innerHTML = '2048';
+        document.getElementById('developer').innerHTML = 'Gabrielle Cirulli';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move the canvas while trying to combine squares that are alike';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/2048.jpg"></button>
+        <p>2048</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="#" data-category="multiplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/1v1.LOL/index.html');
+        document.getElementById('gametitle').innerHTML = '1v1.LOL';
+        document.getElementById('developer').innerHTML = 'JustPlay.LOL';
+        document.getElementById('instructions').innerHTML = 'Use WASD to move, Space to jump, and the Mouse to Look/Shoot';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/1v1lol.jpg"></button>
+        <p>1v1.LOL</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="a" data-category="emulated">
+        <button onclick="embedGame('/File-Games/Emulated-Games/GBA/Ace-Combat-Advance/index.html');
+        document.getElementById('gametitle').innerHTML = 'Ace Combat Advance';
+        document.getElementById('developer').innerHTML = 'Human Soft'; document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move, Press X to fire at enemy fighter jets';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/Ace-Combat-Advance.jpg"></button>
+        <p>Ace Combat Advance</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="a" data-category="puzzle">
+        <button onclick="embedGame('/File-Games/Gfiles/Achievement-Unlocked/index.html');
+        document.getElementById('gametitle').innerHTML = 'Achievement Unlocked';
+        document.getElementById('developer').innerHTML = 'Armor Games'; document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move, Try to get all the Achievments you can';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/achievement-unlocked.jpg"></button>
+        <p>Achievement Unlocked</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="a" data-category="puzzle">
+        <button onclick="embedGame('/File-Games/Gfiles/Achievement-Unlocked-2/index.html');
+        document.getElementById('gametitle').innerHTML = 'Achievement Unlocked 2';
+        document.getElementById('developer').innerHTML = 'Armor Games';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move, Try to get all the Achievments you can';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/achievementunlocked2.jpg"></button>
+        <p>Achievement Unlocked 2</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="a" data-category="incremental">
+        <button onclick="embedGame('/File-Games/Gfiles/Adventure-Capitalist/index.html');
+        document.getElementById('gametitle').innerHTML = 'Adventure Capitalist';
+        document.getElementById('developer').innerHTML = 'Hyper Hippo Entertainment';
+        document.getElementById('instructions').innerHTML = 'Expand your buisnesses by purchasing more and consistently expanding';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/Adventurecapitalist.jpg"></button>
+        <p>Adventure Capitalist</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="a" data-category="io">
+        <button onclick="embedGame('https://incognitopr0xy.up.railway.app/load.html#agar.io/#ffa');
+        document.getElementById('gametitle').innerHTML = 'Agar.io';
+        document.getElementById('developer').innerHTML = 'Matheus Valadares';
+        document.getElementById('instructions').innerHTML = 'Use the mouse to drag your blob around while eating dots and other blobs to grow larger';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/agario.jpg"></button>
+        <p>Agar.io</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="a" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Age-Of-War/index.html');
+        document.getElementById('gametitle').innerHTML = 'Age Of War';
+        document.getElementById('developer').innerHTML = 'Max Games';
+        document.getElementById('instructions').innerHTML = 'Defend your base and upgrade throughout history';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/Ageofwar.jpg"></button>
+        <p>Age Of War</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="a" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Ages-of-Conflict/index.html');
+        document.getElementById('gametitle').innerHTML = 'Ages Of Conflict';
+        document.getElementById('developer').innerHTML = 'JokuPelle';
+        document.getElementById('instructions').innerHTML = 'Watch AI duel it out as civilizations collide in this simulation';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/agesofconflict.jpg"></button>
+        <p>Ages Of Conflict</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="a" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Alien-Hominid/index.html');
+        document.getElementById('gametitle').innerHTML = 'Alien Hominid';
+        document.getElementById('developer').innerHTML = 'TomFulp';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move, Use A to shoot and S to jump';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/alienhominid.jpg"></button>
+        <p>Alien Hominid</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="a" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Among-Us-Fan-Game/index.html');
+        document.getElementById('gametitle').innerHTML = 'Among Us Fan Game';
+        document.getElementById('developer').innerHTML = 'Kevin.Games';
+        document.getElementById('instructions').innerHTML = 'Use WASD to move and use your hacks to dominate the competition';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/amongusfangame.jpg"></button>
+        <p>Among Us Fan Game</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="a" data-category="singleplayer">
+        <button onclick="embedGame('https://funhtml5games.com?embed=angrybirds');
+        document.getElementById('gametitle').innerHTML = 'Angry Birds';
+        document.getElementById('developer').innerHTML = 'Rovio';
+        document.getElementById('instructions').innerHTML = 'Draw/Aim your Angry Bird into the enemy towers to win';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/angrybirds.jpg"></button>
+        <p>Angry Birds</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="a" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Apocalyptic/index.html');
+        document.getElementById('gametitle').innerHTML = 'Apocalyptic';
+        document.getElementById('developer').innerHTML = 'IRunblocked';
+        document.getElementById('instructions').innerHTML = 'Use WASD to move your character as you defend yourself from endless waves of Zombies';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/apocalyptic.jpg"></button>
+        <p>Apocalyptic</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="a" data-category="twoplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Arena-of-Janissary/index.html');
+        document.getElementById('gametitle').innerHTML = 'Arena of Janissary';
+        document.getElementById('developer').innerHTML = 'TwoPlayerGames';
+        document.getElementById('instructions').innerHTML = 'Use C, M, P, Q to battle in a four-way head to head battle';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/arenaofjanissary.jpg"></button>
+        <p>Arena of Janissary</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="a" data-category="twoplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Arrow-of-Janissary/index.html');
+        document.getElementById('gametitle').innerHTML = 'Arrow of Janissary';
+        document.getElementById('developer').innerHTML = 'TwoPlayerGames';
+        document.getElementById('instructions').innerHTML = 'Hold your cursor to aim and release to fire your arrow at the enemy';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/arrowofjanissary.jpg"></button>
+        <p>Arrow of Janissary</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="a" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Artillery-Tower/index.html');
+        document.getElementById('gametitle').innerHTML = 'Artillery Tower';
+        document.getElementById('developer').innerHTML = 'HallPass';
+        document.getElementById('instructions').innerHTML = 'Use your cursor to shoot enemy stickmen and stop them from invading your tower';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/Artillery-Tower.jpg"></button>
+        <p>Artillery Tower</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="a" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Awesome-Seaquest/index.html');
+        document.getElementById('gametitle').innerHTML = 'Awesome Seaquest';
+        document.getElementById('developer').innerHTML = 'Ish-Games';
+        document.getElementById('instructions').innerHTML = 'Build up your fleet and conquer the map full of your enemies';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/awesome-seaquest.jpg"></button>
+        <p>Awesome Seaquest</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="a" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Awesome-Tanks-2/index.html');
+        document.getElementById('gametitle').innerHTML = 'Awesome Tanks 2'; 
+        document.getElementById('developer').innerHTML = 'Coolmath Games';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to control your tanks and complete each level with strategy';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/Awesome-tanks2.jpg"></button>
+        <p>Awesome Tanks 2</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="a" data-category="twoplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Axe-Of-Janissary/index.html');
+        document.getElementById('gametitle').innerHTML = 'Axe of Janissary';
+        document.getElementById('developer').innerHTML = 'TwoPlayerGames';
+        document.getElementById('instructions').innerHTML = 'Hold your cursor to aim and release to fire your axe at the enemy';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/axeofjanissary.jpg"></button>
+        <p>Axe of Janissary</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Bacon-May-Die/index.html');
+        document.getElementById('gametitle').innerHTML = 'Bacon May Die!'; 
+        document.getElementById('developer').innerHTML = 'SnoutUp Games';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move and perform combos on enemy pigs';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/baconmaydie.jpg"></button>
+        <p>Bacon May Die!</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Bad-Ice-Cream/index.html');
+        document.getElementById('gametitle').innerHTML = 'Bad Ice Cream';
+        document.getElementById('developer').innerHTML = 'Nitrome';
+        document.getElementById('instructions').innerHTML = 'Use Arrow keys to collect fruits while defending yourself agaisnt enemies to pass each level';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/badicecream.jpg"></button>
+        <p>Bad Ice Cream</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Bad-Ice-Cream-2/index.html');
+        document.getElementById('gametitle').innerHTML = 'Bad Ice Cream 2';
+        document.getElementById('developer').innerHTML = 'Nitrome';
+        document.getElementById('instructions').innerHTML = 'Use Arrow keys to collect fruits while defending yourself agaisnt enemies to pass each level';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/badicecream2.jpg"></button>
+        <p>Bad Ice Cream 2</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Bad-Ice-Cream-3/index.html');
+        document.getElementById('gametitle').innerHTML = 'Bad Ice Cream 3';
+        document.getElementById('developer').innerHTML = 'Nitrome';
+        document.getElementById('instructions').innerHTML = 'Use Arrow keys to collect fruits while defending yourself agaisnt enemies to pass each level';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/badicecream3.jpg"></button>
+        <p>Bad Ice Cream 3</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="singleplayer">
+        <button onclick="embedGame('https://jcw87.github.io/c2-sans-fight/');
+        document.getElementById('gametitle').innerHTML = 'Bad Time Simulator';
+        document.getElementById('developer').innerHTML = 'jcw87';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to pass this recreation of the Sans Fight from Undertale';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/badtimesimulator.jpg"></button>
+        <p>Bad Time Simulator</p>
+      </div>
+      
+      <div class="fullscreendiv" data-letter="b" data-category="singleplayer">
+        <button onclick="embedGame('https://gotoanddie.github.io/c2-sans-fight/');
+        document.getElementById('gametitle').innerHTML = 'Really Bad Time Simulator';
+        document.getElementById('developer').innerHTML = 'GoToAnddie';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to pass this even more difficult recreation of the Sans Fight from Undertale';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/reallybadtimesimulator.jpg"></button>
+        <p>Really Bad Time Simulator</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Baldis-Basics/index.html');
+        document.getElementById('gametitle').innerHTML = 'Baldis Basics';
+        document.getElementById('developer').innerHTML = 'mystman12';
+        document.getElementById('instructions').innerHTML = 'Use WASD to move around and locate all Seven notebooks you need to win';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/baldis-basics.jpg"></button>
+        <p>Baldi's Basics</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="singleplayer">
+        <button onclick="embedGame('https://ext.minijuegosgratis.com/ball-blast/gameCode/index.html');
+        document.getElementById('gametitle').innerHTML = 'Ball Blast'; document.getElementById('developer').innerHTML = 'Voodoo';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to crack open balls while simultaneously dodging them as they come down';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/ballblast.jpg"></button>
+        <p>Ball Blast</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="emulated">
+        <button onclick="embedGame('/File-Games/Emulated-Games/N64/Banjo-Kazooie/index.html');
+        document.getElementById('gametitle').innerHTML = 'Banjo Kazooie';
+        document.getElementById('developer').innerHTML = 'Rare';
+        document.getElementById('instructions').innerHTML = 'Control characters Banjo and Kazooie as they go on wacky adventures together';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/Banjo-Kazooie.jpg"></button>
+        <p>Banjo Kazooie</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="twoplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Basketball-Stars/index.html');
+        document.getElementById('gametitle').innerHTML = 'Basketball Stars';
+        document.getElementById('developer').innerHTML = 'Madpuffers';
+        document.getElementById('instructions').innerHTML = 'Use WASD or Arrow keys to move and score baskets against your opponent';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/Basketballstars.jpg"></button>
+        <p>Basketball Stars</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="twoplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Basket-Random/index.html');
+        document.getElementById('gametitle').innerHTML = 'Basket Random';
+        document.getElementById('developer').innerHTML = 'RHM Interactive';
+        document.getElementById('instructions').innerHTML = 'Use W or Up Arrow to control the arms of either side as you try to score on the opponent';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/basketrandom.jpg"></button>
+        <p>Basket Random</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Battle-of-Britian-Commando/index.html');
+        document.getElementById('gametitle').innerHTML = 'Battle Of Britian: Commando';
+        document.getElementById('developer').innerHTML = 'Miniclip';
+        document.getElementById('instructions').innerHTML = 'Control a soilder as you try to stop the germans from taking over the English channel';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/Commando-Battle-Of-Britain.jpg"></button>
+        <p>Battle Of Britian: Commando</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Bitlife/index.html');
+        document.getElementById('gametitle').innerHTML = 'Bitlife';
+        document.getElementById('developer').innerHTML = 'CandyWriter';
+        document.getElementById('instructions').innerHTML = 'Progress through life as you make decisions trying to become rich and succesful as you age up';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/bitlife.jpg"></button>
+        <p>Bitlife</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="puzzle">
+        <button onclick="embedGame('/File-Games/Gfiles/Black/index.html');
+        document.getElementById('gametitle').innerHTML = 'Black';
+        document.getElementById('developer').innerHTML = 'Bart Bonte';
+        document.getElementById('instructions').innerHTML = 'Solve puzzles and challenges that require you to turn the entire screen to the color black';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/black.jpg"></button>
+        <p>Black</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="towerdefense">
+        <button onclick="embedGame('/File-Games/Gfiles/Bloons-Tower-Defense/index.html');
+        document.getElementById('gametitle').innerHTML = 'Bloons TD';
+        document.getElementById('developer').innerHTML = 'NinjaKiwi';
+        document.getElementById('instructions').innerHTML = 'Place towers and divise a strategy to defend your path against the intruding bloons';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/bloonstd.jpg"></button>
+        <p>Bloons TD</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="towerdefense">
+        <button onclick="embedGame('/File-Games/Gfiles/Bloons-Tower-Defense-2/index.html');
+        document.getElementById('gametitle').innerHTML = 'Bloons TD 2'; document.getElementById('developer').innerHTML = 'NinjaKiwi';
+        document.getElementById('instructions').innerHTML = 'Place towers and divise a strategy to defend your path against the intruding bloons';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/Btd2.jpg"></button>
+        <p>Bloons TD 2</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="towerdefense">
+        <button onclick="embedGame('/File-Games/Gfiles/Bloons-Tower-Defense-3/index.html');
+        document.getElementById('gametitle').innerHTML = 'Bloons TD 3';
+        document.getElementById('developer').innerHTML = 'NinjaKiwi';
+        document.getElementById('instructions').innerHTML = 'Place towers and divise a strategy to defend your path against the intruding bloons';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/bloons-tower-defense-3.jpg"></button>
+        <p>Bloons TD 3</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="towerdefense">
+        <button onclick="embedGame('/File-Games/Gfiles/Bloons-Tower-Defense-4/index.html');
+        document.getElementById('gametitle').innerHTML = 'Bloons TD 4';
+        document.getElementById('developer').innerHTML = 'NinjaKiwi';
+        document.getElementById('instructions').innerHTML = 'Place towers and divise a strategy to defend your path against the intruding bloons';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/btd4.jpg"></button>
+        <p>Bloons TD 4</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Bloxorz/index.html');
+        document.getElementById('gametitle').innerHTML = 'Bloxorz';
+        document.getElementById('developer').innerHTML = 'Damien Clarke';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to control your block while trying to get it through the square hole';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/bloxorz.jpg"></button>
+        <p>Bloxorz</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="puzzle">
+        <button onclick="embedGame('/File-Games/Gfiles/Blue/index.html');
+        document.getElementById('gametitle').innerHTML = 'Blue';
+        document.getElementById('developer').innerHTML = 'Bart Bonte';
+        document.getElementById('instructions').innerHTML = 'Solve puzzles and challenges that require you to turn the entire screen to the color blue';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/blue.jpg"></button>
+        <p>Blue</p>
+      </div>
+      
+      <div class="fullscreendiv" data-letter="b" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Bowman/index.html');
+        document.getElementById('gametitle').innerHTML = 'Bowman';
+        document.getElementById('developer').innerHTML = 'FreeWorldGroup';
+        document.getElementById('instructions').innerHTML = 'Drag your mouse to aim the arrow at your opponent while you try to hit them';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/bowman.jpg"></button>
+        <p>Bowman</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Bowman-2/index.html');
+        document.getElementById('gametitle').innerHTML = 'Bowman 2';
+        document.getElementById('developer').innerHTML = 'FreeWorldGroup';
+        document.getElementById('instructions').innerHTML = 'Drag your mouse to aim the arrow at your opponent while you try to hit them';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/bowman-2.jpg"></button>
+        <p>Bowman 2</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="twoplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Boxing-Random/index.html');
+        document.getElementById('gametitle').innerHTML = 'Boxing Random';
+        document.getElementById('developer').innerHTML = 'RHM Interactive';
+        document.getElementById('instructions').innerHTML = 'Press W/Up Arrow to control the characters and duke it out until there is a winner';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/boxingrandom.jpg"></button>
+        <p>Boxing Random</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Bubble-Tanks-2/index.html');
+        document.getElementById('gametitle').innerHTML = 'Bubble Tanks 2';
+        document.getElementById('developer').innerHTML = 'Hero Interactive';
+        document.getElementById('instructions').innerHTML = 'Use WASD to move and mouse to shoot your enemy bubble tanks. Get more powerful by killing other bubble tanks and taking their bubbles';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/bubbletanks2.jpg"></button>
+        <p>Bubble Tanks 2</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Bullet-Bill/index.html');
+        document.getElementById('gametitle').innerHTML = 'Bullet Bill';
+        document.getElementById('developer').innerHTML = 'Psycosis91';
+        document.getElementById('instructions').innerHTML = 'Use Arrow keys to control your character as you try to dodge the incoming obstacles';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/bulletbill.jpg"></button>
+        <p>Bullet Bill</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Bullet-Bill-2/index.html');
+        document.getElementById('gametitle').innerHTML = 'Bullet Bill 2';
+        document.getElementById('developer').innerHTML = 'Psycosis91';
+        document.getElementById('instructions').innerHTML = 'Use your cursor to control your character as you try to dodge incoming obstacles';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/bulletbill2.jpg"></button>
+        <p>Bullet Bill 2</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Bullet-Bill-3/index.html');
+        document.getElementById('gametitle').innerHTML = 'Bullet Bill 3';
+        document.getElementById('developer').innerHTML = 'Psycosis91';
+        document.getElementById('instructions').innerHTML = 'Use your cursor to control your character as you try to dodge incoming obstacles';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/bulletbill3.jpg"></button>
+        <p>Bullet Bill 3</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="b" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Bunker/index.html');
+        document.getElementById('gametitle').innerHTML = 'Bunker';
+        document.getElementById('developer').innerHTML = 'ArmorGames';
+        document.getElementById('instructions').innerHTML = 'Use your cursor to control your turret as you kill off incoming enemies';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/Bunker.jpg"></button>
+        <p>Bunker</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="flash">
+        <button onclick="embedGame('https://www.friv.com/z/games/cannonbasketball/index-x.html');
+        document.getElementById('gametitle').innerHTML = 'Cannon Basketball';
+        document.getElementById('developer').innerHTML = 'Nepix Games';
+        document.getElementById('instructions').innerHTML = 'Use your cursor to control your cannon as you try to score baskets';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/cannon-basketball-icon.jpg"></button>
+        <p>Cannon Basketball</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Cannon-Basketball-4/index.html');
+        document.getElementById('gametitle').innerHTML = 'Cannon Basketball 4';
+        document.getElementById('developer').innerHTML = 'Nepix Games';
+        document.getElementById('instructions').innerHTML = 'Use your cursor to control your cannon as you try to score baskets';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/Cannon-Basketball-4.jpg"></button>
+        <p>Cannon Basketball 4</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="singleplayer">
+        <button onclick="embedGame('https://www.friv.com/z/games/careatscarwinteradventure/game.html');
+        document.getElementById('gametitle').innerHTML = 'Car Eats Car: Winter Adventure';
+        document.getElementById('developer').innerHTML = 'SMOKOKO LTD';
+        document.getElementById('instructions').innerHTML = 'Drive your car and escape the enemies while collecting gems';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/car-eats-car-winter-adventure.jpg"></button>
+        <p>Car Eats Car: Winter Adventure</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="driving">
+        <button onclick="embedGame('/File-Games/Gfiles/Car-Rush/index.html');
+        document.getElementById('gametitle').innerHTML = 'Car Rush';
+        document.getElementById('developer').innerHTML = 'Beano Games';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to control your car through increasingly challenging tracks and stages';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/carrush.jpg"></button>
+        <p>Car Rush</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="driving">
+        <button onclick="embedGame('/File-Games/Gfiles/Cars-Simulator/index.html');
+        document.getElementById('gametitle').innerHTML = 'Cars Simulator';
+        document.getElementById('developer').innerHTML = 'Y8';
+        document.getElementById('instructions').innerHTML = 'Use WASD to drive and SHIFT to use nitrous around a cars playground and explore the jumps and ramps';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/cars-simulator.png"></button>
+        <p>Cars Simulator</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="twoplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Catapult-of-Janissary/index.html');
+        document.getElementById('gametitle').innerHTML = 'Catapult of Janissary';
+        document.getElementById('developer').innerHTML = 'TwoPlayerGames';
+        document.getElementById('instructions').innerHTML = 'Drag your mouse to aim catapults and try to crush your opponent';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/catapultofjanissary.jpg"></button>
+        <p>Catapult of Janissary</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Cell-Machine/index.html');
+        document.getElementById('gametitle').innerHTML = 'Cell Machine';
+        document.getElementById('developer').innerHTML = 'Sam Hogan';
+        document.getElementById('instructions').innerHTML = 'Divise Strategies to clear all of the red blocks off of the map';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/cellmachine.jpg"></button>
+        <p>Cell Machine</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Chaos-Faction/index.html');
+        document.getElementById('gametitle').innerHTML = 'Chaos Faction';
+        document.getElementById('developer').innerHTML = 'Dissolute Productions';
+        document.getElementById('instructions').innerHTML = 'Use Arrow keys and space bar to defend yourself and defeat others in this arena fighting game';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/chaos-faction.jpg"></button>
+        <p>Chaos Faction</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Chaos-Faction-2/index.html');
+        document.getElementById('gametitle').innerHTML = 'Chaos Faction 2';
+        document.getElementById('developer').innerHTML = 'Dissolute Productions';
+        document.getElementById('instructions').innerHTML = 'Use Arrow keys and space bar to defend yourself and defeat others in this arena fighting game';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/chaosfaction2.jpg"></button>
+        <p>Chaos Faction 2</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="puzzle">
+        <button onclick="embedGame('https://a.megamathstuff.com#aHR0cHM6Ly9jaGVzcy5jb20=');
+        document.getElementById('gametitle').innerHTML = 'Chess.com';
+        document.getElementById('developer').innerHTML = 'Erik Allebest';
+        document.getElementById('instructions').innerHTML = 'Play chess against other players in real time';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/chesscom.jpg"></button>
+        <p>Chess.com</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="singleplayer">
+        <button onclick="embedGame('https://unblocked-dino.glitch.me/game/play.html');
+        document.getElementById('gametitle').innerHTML = 'Chrome Dino Run';
+        document.getElementById('developer').innerHTML = 'Google';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to control your dino while trying to stay alive as long as possible';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/chromedinorun.jpg"></button>
+        <p>Chrome Dino Run</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Circloo/index.html');
+        document.getElementById('gametitle').innerHTML = 'Circloo';
+        document.getElementById('developer').innerHTML = 'Florian van Strien';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to control a circle as you try to expand the bigger circle to its max size';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/circloo.jpg"></button>
+        <p>Circloo</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="singleplayer">
+        <button onclick="embedGame('https://games.engineering.com/circloO2/index.html');
+        document.getElementById('gametitle').innerHTML = 'Circloo 2';
+        document.getElementById('developer').innerHTML = 'Florian van Strien';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to control a circle as you try to expand the bigger circle to its max size';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/circloo2.jpg"></button>
+        <p>Circloo 2</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="singleplayer">
+        <button onclick="embedGame('https://games-online.io/game/ClickerHeroes/');
+        document.getElementById('gametitle').innerHTML = 'Clicker Heroes';
+        document.getElementById('developer').innerHTML = 'Playsaurus';
+        document.getElementById('instructions').innerHTML = 'Click to defeat monsters and level up in order to defeat more and more powerful monsters';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/clickerheroes.jpg"></button>
+        <p>Clicker Heroes</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Cluster-Rush/index.html');
+        document.getElementById('gametitle').innerHTML = 'Cluster Rush';
+        document.getElementById('developer').innerHTML = 'Landfall';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to control yourself as you try to jump from truck to truck';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/clusterrush.jpg"></button>
+        <p>Cluster Rush</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="emulated">
+        <button onclick="embedGame('/File-Games/Emulated-Games/NES/Contra/index.html');
+        document.getElementById('gametitle').innerHTML = 'Contra';
+        document.getElementById('developer').innerHTML = 'Konami';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to control your soilder and press X to fire your gun at enemy troops';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/contra.jpg"></button>
+        <p>Contra</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="emulated">
+        <button onclick="embedGame('/File-Games/Emulated-Games/SNES/Contra-3/index.html');
+        document.getElementById('gametitle').innerHTML = 'Contra III: The Alien Wars';
+        document.getElementById('developer').innerHTML = 'Konami';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to control your soilder and press X to fire your gun at enemy troops';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/contra3.jpg"></button>
+        <p>Contra III: The Alien Wars</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="incremental">
+        <button onclick="embedGame('/File-Games/Gfiles/Cookie-Clicker/index.html');
+        document.getElementById('gametitle').innerHTML = 'Cookie Clicker';
+        document.getElementById('developer').innerHTML = 'Ortiel';
+        document.getElementById('instructions').innerHTML = 'Click the cookie to earn upgrades and boosts to help you earn more and more cookies';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/cookieclicker.jpg"></button>
+        <p>Cookie Clicker</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="puzzle">
+        <button onclick="embedGame('/File-Games/Gfiles/Cram/index.html');
+        document.getElementById('gametitle').innerHTML = 'Cram';
+        document.getElementById('developer').innerHTML = 'Pacdude Games';
+        document.getElementById('instructions').innerHTML = 'Keep your mouse over the moving logo to see the question and try to answer all 5 questions right for a perfect score';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/Cram.png"></button>
+        <p>Cram</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/CreativeKillChamber/index.html');
+        document.getElementById('gametitle').innerHTML = 'Creative Kill Chamber';
+        document.getElementById('developer').innerHTML = 'Stickpage';
+        document.getElementById('instructions').innerHTML = 'Click items and characters on the screen to escape the chamber';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/creativekillchamber.jpg"></button>
+        <p>Creative Kill Chamber</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Crossy-Road/index.html');
+        document.getElementById('gametitle').innerHTML = 'Crossy Road';
+        document.getElementById('developer').innerHTML = 'Hipster Whale';
+        document.getElementById('instructions').innerHTML = 'Use WASD/Arrow Keys to control your character as you try to dodge incoming obstacles and make it as far as possible';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/crossy-road.jpg"></button>
+        <p>Crossy Road</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="incremental">
+        <button onclick="embedGame('/File-Games/Gfiles/CSGO-Clicker/index.html');
+        document.getElementById('gametitle').innerHTML = 'CS:GO Clicker';
+        document.getElementById('developer').innerHTML = 'banned';
+        document.getElementById('instructions').innerHTML = 'Click to earn money, spend money on various cases and upgrades to gamble for unique CS:GO items';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/csgoclicker.png"></button>
+        <p>CS:GO Clicker</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Cubefield/index.html');
+        document.getElementById('gametitle').innerHTML = 'Cubefield';
+        document.getElementById('developer').innerHTML = 'YoArcade';
+        document.getElementById('instructions').innerHTML = 'Use left & right arrow keys to dodge incoming cubes so you can make it as far as possible';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/cubefield.jpg"></button>
+        <p>Cubefield</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Cube-Miner/index.html');
+        document.getElementById('gametitle').innerHTML = 'Cube Miner';
+        document.getElementById('developer').innerHTML = 'legobuzz12';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys and space to mine yourself as deep as possible while upgrading the best you can';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/cubeminer.jpg"></button>
+        <p>Cube Miner</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Cube-Miner-2/index.html');
+        document.getElementById('gametitle').innerHTML = 'Cube Miner 2';
+        document.getElementById('developer').innerHTML = 'legobuzz12';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys and space to mine yourself as deep as possible while upgrading the best you can';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/cubeminer2.jpg"></button>
+        <p>Cube Miner 2</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Cube-Miner-3/index.html');
+        document.getElementById('gametitle').innerHTML = 'Cube Miner 3';
+        document.getElementById('developer').innerHTML = 'legobuzz12';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys and space to mine yourself as deep as possible while upgrading the best you can';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/cubeminer3.jpg"></button>
+        <p>Cube Miner 3</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="c" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Cut-The-Rope/index.html');
+        document.getElementById('gametitle').innerHTML = 'Cut The Rope';
+        document.getElementById('developer').innerHTML = 'ZeptoLab';
+        document.getElementById('instructions').innerHTML = 'Drag your mouse to cut the rope so the candy can fall into the monsters mouth';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/cuttherope.jpg"></button>
+        <p>Cut The Rope</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Dad-n-me/index.html');
+        document.getElementById('gametitle').innerHTML = 'Dad n me';
+        document.getElementById('developer').innerHTML = 'TomFulp';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move, Use A to light jab and S for a heavy attack';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/Dadnme.jpg"></button>
+        <p>Dad n' me</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Darkcut/index.html');
+        document.getElementById('gametitle').innerHTML = 'Darkcut';
+        document.getElementById('developer').innerHTML = 'Jmtb02';
+        document.getElementById('instructions').innerHTML = 'Use Controls as promted to perform graphic surgery on a soilder';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/darkcut.jpg"></button>
+        <p>Darkcut</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Darkcut-2/index.html');
+        document.getElementById('gametitle').innerHTML = 'Darkcut 2';
+        document.getElementById('developer').innerHTML = 'Jmtb02';
+        document.getElementById('instructions').innerHTML = 'Use Controls as promted to perform graphic surgery on a soilder';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/darkcut2.jpg"></button>
+        <p>Darkcut 2</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Darkcut-3/index.html');
+        document.getElementById('gametitle').innerHTML = 'Darkcut 3';
+        document.getElementById('developer').innerHTML = 'Jmtb02';
+        document.getElementById('instructions').innerHTML = 'Use Controls as promted to perform graphic surgery on a soilder';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/darkcut3.jpg"></button>
+        <p>Darkcut 3</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="puzzle">
+        <button onclick="embedGame('/File-Games/Gfiles/Deal-Or-No-Deal/index.html');
+        document.getElementById('gametitle').innerHTML = 'Deal Or No Deal';
+        document.getElementById('developer').innerHTML = 'Pacdude Games';
+        document.getElementById('instructions').innerHTML = 'Select cases and try to find the case with $1M inside';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/Deal-Or-No-Deal.webp"></button>
+        <p>Deal Or No Deal</p>
+      </div>
+      
+      <div class="fullscreendiv" data-letter="d" data-category="singleplayer">
+        <button onclick="embedGame('https://app-165865.games.s3.yandex.net/165865/g5i92zlftj709k08ejk195g6vimi7ezc/index.html');
+        document.getElementById('gametitle').innerHTML = 'Death Worm';
+        document.getElementById('developer').innerHTML = 'BizoGames';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to control your worm and try to eat as many people as you can';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/deathworm.jpg"></button>
+        <p>Death Worm</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="io">
+        <button onclick="embedGame('https://deeeep.io/');
+        document.getElementById('gametitle').innerHTML = 'Deeeep.io';
+        document.getElementById('developer').innerHTML = 'Federico Mouse';
+        document.getElementById('instructions').innerHTML = 'Evolve your fish through stages against other players in real time';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/deeeepio.jpg"></button>
+        <p>Deeeep.io</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Defend-Your-Castle/index.html');
+        document.getElementById('gametitle').innerHTML = 'Defend Your Castle';
+        document.getElementById('developer').innerHTML = 'XGen Studios';
+        document.getElementById('instructions').innerHTML = 'Build up your castle defenses to progress as you defend against enemy forces';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/Defendyourcastle.jpg"></button>
+        <p>Defend Your Castle</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="io">
+        <button onclick="embedGame('https://defly.io');
+        document.getElementById('gametitle').innerHTML = 'Defly.io';
+        document.getElementById('developer').innerHTML = 'Serial';
+        document.getElementById('instructions').innerHTML = 'Use WASD to move and space to build up your castle and defend yourself from other players in real time';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/deflyio.jpg"></button>
+        <p>Defly.io</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="towerdefense">
+        <button onclick="embedGame('/File-Games/Gfiles/Desktop-Tower-Defense/index.html');
+        document.getElementById('gametitle').innerHTML = 'Desktop Tower Defense';
+        document.getElementById('developer').innerHTML = 'Paul Preece';
+        document.getElementById('instructions').innerHTML = 'Place Towers on an office desktop to defend your base from invading monsters';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/desktoptowerdefense.jpg"></button>
+        <p>Desktop Tower Defense</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Die-In-Style/index.html');
+        document.getElementById('gametitle').innerHTML = 'Die In Style';
+        document.getElementById('developer').innerHTML = 'Simon Stenhouse';
+        document.getElementById('instructions').innerHTML = 'Use Your Cursor to choose the way you die';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/die-in-style.webp"></button>
+        <p>Die In Style</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="io">
+        <button onclick="embedGame('https://diep.io');
+        document.getElementById('gametitle').innerHTML = 'Diep.io';
+        document.getElementById('developer').innerHTML = 'Matheus Valadares';
+        document.getElementById('instructions').innerHTML = 'Use WASD to move and click to fire your cannon. Gather orbs to upgrade and evolve so you can dominate the opponent';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/diep_icon.jpg"></button>
+        <p>Diep.io</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Diggy/index.html');
+        document.getElementById('gametitle').innerHTML = 'Diggy';
+        document.getElementById('developer').innerHTML = 'Coolmath Games';
+        document.getElementById('instructions').innerHTML = 'Use WASD to move and E Click to drill down as far as you can to the earths core';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/diggy.jpg"></button>
+        <p>Diggy</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="incremental">
+        <button onclick="embedGame('/File-Games/Gfiles/Dogeminer/index.html');
+        document.getElementById('gametitle').innerHTML = 'Dogeminer';
+        document.getElementById('developer').innerHTML = 'rkn';
+        document.getElementById('instructions').innerHTML = 'Click the doge to earn dogecoin and buy upgrades to earn the most amount of dogecoin';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/dogeminer.jpg"></button>
+        <p>Dogeminer</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="incremental">
+        <button onclick="embedGame('https://dogeminer2.com/');
+        document.getElementById('gametitle').innerHTML = 'Dogeminer 2: Back to the Moon';
+        document.getElementById('developer').innerHTML = 'rkn';
+        document.getElementById('instructions').innerHTML = 'Click the doge to earn dogecoin and buy upgrades to earn the most amount of dogecoin';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/dogeminer2.jpg"></button>
+        <p>Dogeminer 2: Back to the Moon</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Doodle-Jump/index.html');
+        document.getElementById('gametitle').innerHTML = 'Doodle Jump';
+        document.getElementById('developer').innerHTML = 'Lima Sky';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to control your character as you try to climb as high as you can';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/doodlejump.jpg"></button>
+        <p>Doodle Jump</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="emulated">
+        <button onclick="embedGame('/File-Games/Emulated-Games/GBA/DOOM/index.html');
+        document.getElementById('gametitle').innerHTML = 'DOOM';
+        document.getElementById('developer').innerHTML = 'id Software';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to control your character and Press Z to fire your weapon. Kill all the demons to pass';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/doom.jpg"></button>
+        <p>DOOM</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="emulated">
+        <button onclick="embedGame('/File-Games/Emulated-Games/GBA/DOOM-2/index.html');
+        document.getElementById('gametitle').innerHTML = 'DOOM 2';
+        document.getElementById('developer').innerHTML = 'id Software';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to control your character and Press X to fire your weapon. Kill all the demons to pass';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/doom2.jpg"></button>
+        <p>DOOM 2</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="emulated">
+        <button onclick="embedGame('/File-Games/Emulated-Games/N64/DOOM-64/index.html');
+        document.getElementById('gametitle').innerHTML = 'DOOM 64';
+        document.getElementById('developer').innerHTML = 'id Software';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to control your character and Press R to fire your weapon. Kill all the demons to pass';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/doom64.jpg"></button>
+        <p>DOOM 64</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="emulated">
+        <button onclick="embedGame('/File-Games/Emulated-Games/NES/Double-Dragon/index.html');
+        document.getElementById('gametitle').innerHTML = 'Double Dragon';
+        document.getElementById('developer').innerHTML = 'Technos Japan';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to control your character and Press Z/X to attack enemies';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/doubledragon.jpg"></button>
+        <p>Double Dragon</p>
+      </div>
+      
+      <div class="fullscreendiv" data-letter="d" data-category="driving">
+        <button onclick="embedGame('/File-Games/Gfiles/Drag-Racing-Rivals/index.html');
+        document.getElementById('gametitle').innerHTML = 'Drag Racing Rivals';
+        document.getElementById('developer').innerHTML = 'INLOGIC CASINO';
+        document.getElementById('instructions').innerHTML = 'Use Up Arrow To Shift/Rev, keep drag racing to unlock new challenges and rewards';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/dragracingrivals.jpg"></button>
+        <p>Drag Racing Rivals</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Draw-The-Hill/index.html');
+        document.getElementById('gametitle').innerHTML = 'Draw The Hill';
+        document.getElementById('developer').innerHTML = 'MathPlayground';
+        document.getElementById('instructions').innerHTML = 'Drag and hold your mouse to draw a path for your car to pass';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/draw-the-hill.jpg"></button>
+        <p>Draw The Hill</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="driving">
+        <button onclick="embedGame('/File-Games/Gfiles/drift-boss/index.html');
+        document.getElementById('gametitle').innerHTML = 'Drift Boss';
+        document.getElementById('developer').innerHTML = 'MarketJS';
+        document.getElementById('instructions').innerHTML = 'Click or hold space to drift, release to go opposite direction. Try to reach the finish line';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/driftboss.jpg"></button>
+        <p>Drift Boss</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="driving">
+        <button onclick="embedGame('/File-Games/Gfiles/Drift-Hunters/index.html');
+        document.getElementById('gametitle').innerHTML = 'Drift Hunters';
+        document.getElementById('developer').innerHTML = 'ilya.kaminetsky';
+        document.getElementById('instructions').innerHTML = 'Use WASD/Arrow Keys to drive your car and rack up points by performing drift combos to unlock beter cars';
+        document.documentElement.scrollTop = 0;"><img class="gameicon" loading="lazy"
+        src="Game-icons/drifthunters.jpg"></button>
+        <p>Drift Hunters</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="driving">
+        <button onclick="embedGame('/File-Games/Gfiles/Drifty-Car/index.html');
+        document.getElementById('gametitle').innerHTML = 'Drifty Car';
+        document.getElementById('developer').innerHTML = 'XYZ-';
+        document.getElementById('instructions').innerHTML = 'Use Arrow keys to drive and stay on the trail as long as possible or else you lose';
+        document.documentElement.scrollTop = 0;"><img class="gameicon" loading="lazy"
+        src="Game-icons/driftycar.png"></button>
+        <p>Drifty Car</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="driving">
+        <button onclick="embedGame('/File-Games/Gfiles/Drive-Mad/index.html');
+        document.getElementById('gametitle').innerHTML = 'Drive Mad';
+        document.getElementById('developer').innerHTML = 'Martin Magni';
+        document.getElementById('instructions').innerHTML = 'Use Left & Right Arrow Keys to steer forward and backward. Try to reach the end without flipping over';
+        document.documentElement.scrollTop = 0;"><img class="gameicon" loading="lazy"
+        src="Game-icons/Drive-Mad.jpg"></button>
+        <p>Drive Mad</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="twoplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Drunken-Boxing/index.html');
+        document.getElementById('gametitle').innerHTML = 'Drunken Boxing';
+        document.getElementById('developer').innerHTML = 'RHM Interactive';
+        document.getElementById('instructions').innerHTML = 'Use WASD/Arrow keys to control your drunken boxer. The goal is to beat the opponent';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/drunken-boxing.jpg"></button>
+        <p>Drunken Boxing</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="flash">
+        <button onclick="embedGame('https://f3.silvergames.com/m/ducklife/');
+        document.getElementById('gametitle').innerHTML = 'Duck Life';
+        document.getElementById('developer').innerHTML = 'Wix Games';
+        document.getElementById('instructions').innerHTML = 'Complete training challenges to build up your ducks strength so you can become the Duck Life champion';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/duck-life.jpg"></button>
+        <p>Duck Life</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="flash">
+        <button onclick="embedGame('https://unblocked66world.com/flashgame?load=duck-life-2');
+        document.getElementById('gametitle').innerHTML = 'Duck Life 2';
+        document.getElementById('developer').innerHTML = 'Wix Games';
+        document.getElementById('instructions').innerHTML = 'Complete training challenges to build up your ducks strength so you can become the Duck Life champion';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/Ducklife2.jpg"></button>
+        <p>Duck Life 2</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Ducklife-3/index.html');
+        document.getElementById('gametitle').innerHTML = 'Duck Life 3';
+        document.getElementById('developer').innerHTML = 'Wix Games';
+        document.getElementById('instructions').innerHTML = 'Complete training challenges to build up your ducks strength so you can become the Duck Life champion';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/ducklife3.jpg"></button>
+        <p>Duck Life 3</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Ducklife-4/index.html');
+        document.getElementById('gametitle').innerHTML = 'Duck Life 4';
+        document.getElementById('developer').innerHTML = 'Wix Games';
+        document.getElementById('instructions').innerHTML = 'Complete training challenges to build up your ducks strength so you can become the Duck Life champion';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/Ducklife4.jpg"></button>
+        <p>Duck Life 4</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="emulated">
+        <button onclick="embedGame('/File-Games/Emulated-Games/GBC/Duke-Nukem/index.html');
+        document.getElementById('gametitle').innerHTML = 'Duke Nukem';
+        document.getElementById('developer').innerHTML = '3D Realms';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move, Z to jump, and X to shoot yourself through enemies and anything in your way';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/dukenukem.jpg"></button>
+        <p>Duke Nukem</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="d" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Dynasty-Street/index.html');
+        document.getElementById('gametitle').innerHTML = 'Dynasty Street';
+        document.getElementById('developer').innerHTML = 'EON';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move and Z to punch. Defeat all the red enemies to win';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/Dynasty-Street.jpg"></button>
+        <p>Dynasty Street</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="e" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Earth-Taken/index.html');
+        document.getElementById('gametitle').innerHTML = 'Earth Taken';
+        document.getElementById('developer').innerHTML = 'SeethingSwarm';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move and A to shoot. Scavenge your way through the challenges and world to survive';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/earth-taken.jpg"></button>
+        <p>Earth Taken</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="e" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Earth-Taken-2/index.html');
+        document.getElementById('gametitle').innerHTML = 'Earth Taken 2';
+        document.getElementById('developer').innerHTML = 'SeethingSwarm';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move and A to shoot. Scavenge your way through the challenges and world to survive';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/earth-taken-2.jpg"></button>
+        <p>Earth Taken 2</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="e" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Earth-Taken-3/index.html');
+        document.getElementById('gametitle').innerHTML = 'Earth Taken 3';
+        document.getElementById('developer').innerHTML = 'SeethingSwarm';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move and A to shoot. Scavenge your way through the challenges and world to survive';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/earthtaken3.jpg"></button>
+        <p>Earth Taken 3</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="e" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Electricman/index.html');
+        document.getElementById('gametitle').innerHTML = 'Electricman';
+        document.getElementById('developer').innerHTML = 'Damien Clarke';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move and A, S, D, Q, W, E to perform special attacks and moves on your enemies in the tournament';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/electricman.jpg"></button>
+        <p>Electricman</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="e" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Endless-War/index.html');
+        document.getElementById('gametitle').innerHTML = 'Endless War';
+        document.getElementById('developer').innerHTML = 'Vitaly';
+        document.getElementById('instructions').innerHTML = 'Use WASD to move and Click to fire your weapon. Clear all enemies off the battlefield without dying to win';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/Endlesswar.jpg"></button>
+        <p>Endless War</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="e" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Endless-War-2/index.html');
+        document.getElementById('gametitle').innerHTML = 'Endless War 2';
+        document.getElementById('developer').innerHTML = 'Vitaly';
+        document.getElementById('instructions').innerHTML = 'Use WASD to move and Click to fire your weapon. Clear all enemies off the battlefield without dying to win';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/endlesswar2.jpg"></button>
+        <p>Endless War 2</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="e" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Endless-War-3/index.html');
+        document.getElementById('gametitle').innerHTML = 'Endless War 3';
+        document.getElementById('developer').innerHTML = 'Vitaly';
+        document.getElementById('instructions').innerHTML = 'Use WASD to move and Click to fire your weapon. Clear all enemies off the battlefield without dying to win';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/endless-war-3.jpg"></button>
+        <p>Endless War 3</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="e" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Endless-War-4/index.html');
+        document.getElementById('gametitle').innerHTML = 'Endless War 4';
+        document.getElementById('developer').innerHTML = 'Vitaly';
+        document.getElementById('instructions').innerHTML = 'Use WASD to move and Click to fire your weapon. Clear all enemies off the battlefield without dying to win';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/endlesswar4.jpg"></button>
+        <p>Endless War 4</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="f" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Fancy-Pants-Adventure/index.html');
+        document.getElementById('gametitle').innerHTML = 'Fancy Pants Adventure';
+        document.getElementById('developer').innerHTML = 'Borne Games';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move, S to jump. Kill all enemies or finish the level to win';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/fancypantsadventure.jpg"></button>
+        <p>Fancy Pants Adventure</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="f" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Fancy-Pants-Adventure-II/index.html');
+        document.getElementById('gametitle').innerHTML = 'Fancy Pants Adventure: World II';
+        document.getElementById('developer').innerHTML = 'Borne Games';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move, S to jump. Kill all enemies or finish the level to win';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/fancypantsadventure2.jpg"></button>
+        <p>Fancy Pants Adventure: World II</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="f" data-category="flash">
+        <button onclick="embedGame('/File-Games/Gfiles/Fancy-Pants-Adventure-III/index.html');
+        document.getElementById('gametitle').innerHTML = 'Fancy Pants Adventure: World 3';
+        document.getElementById('developer').innerHTML = 'Borne Games';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move, S to jump. Kill all enemies or finish the level to win';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/fancypants3.jpg"></button>
+        <p>Fancy Pants Adventure: World 3</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="f" data-category="emulated">
+        <button onclick="embedGame('/File-Games/Emulated-Games/DS/FIFA06/index.html');
+        document.getElementById('gametitle').innerHTML = 'FIFA 06';
+        document.getElementById('developer').innerHTML = 'EA Sports';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move, Build your team and score goals to win';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/fifa06.jpg"></button>
+        <p>FIFA 06</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="f" data-category="emulated">
+        <button onclick="embedGame('/File-Games/Emulated-Games/GBA/FIFA-WorldCup-2006/index.html');
+        document.getElementById('gametitle').innerHTML = 'FIFA 06: World Cup';
+        document.getElementById('developer').innerHTML = 'EA Sports';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move, Build your team and score goals to win';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/fifa06worldcup.jpg"></button>
+        <p>FIFA 06: World Cup</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="f" data-category="emulated">
+        <button onclick="embedGame('/File-Games/Emulated-Games/SNES/FIFA97/index.html');
+        document.getElementById('gametitle').innerHTML = 'FIFA 97';
+        document.getElementById('developer').innerHTML = 'EA Sports';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move, Build your team and score goals to win';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/fifa97.jpg"></button>
+        <p>FIFA 97</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="f" data-category="emulated">
+        <button onclick="embedGame('/File-Games/Emulated-Games/NES/Final-Fantasy/index.html');
+        document.getElementById('gametitle').innerHTML = 'Final Fantasy';
+        document.getElementById('developer').innerHTML = 'Square Enix';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move, Complete quests and build up your 4 characters to become powerful';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/finalfantasy.jpg"></button>
+        <p>Final Fantasy</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="f" data-category="emulated">
+        <button onclick="embedGame('/File-Games/Emulated-Games/SNES/Final-Fantasy-II/index.html');
+        document.getElementById('gametitle').innerHTML = 'Final Fantasy II';
+        document.getElementById('developer').innerHTML = 'Square Enix';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move, Complete quests and build up your 4 characters to become powerful';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/finalfantasy2.jpg"></button>
+        <p>Final Fantasy II</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="f" data-category="emulated">
+        <button onclick="embedGame('/File-Games/Emulated-Games/SNES/Final-Fantasy-III/index.html');
+        document.getElementById('gametitle').innerHTML = 'Final Fantasy III';
+        document.getElementById('developer').innerHTML = 'Square Enix';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move, Complete quests and build up your 4 characters to become powerful';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/finalfantasy3.jpg"></button>
+        <p>Final Fantasy III</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="f" data-category="emulated">
+        <button onclick="embedGame('/File-Games/Emulated-Games/SNES/Final-Fight/index.html');
+        document.getElementById('gametitle').innerHTML = 'Final Fight';
+        document.getElementById('developer').innerHTML = 'Capcom';
+        document.getElementById('instructions').innerHTML = 'Use Arrow Keys to move, beat up enemies and win fights to progress';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/final-fight.jpg"></button>
+        <p>Final Fight</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="f" data-category="flash">
+        <button onclick="embedGame('https://frivez.com/flashgame?load=final-ninja-zero');
+        document.getElementById('gametitle').innerHTML = 'Final Ninja Zero';
+        document.getElementById('developer').innerHTML = 'Nitrome';
+        document.getElementById('instructions').innerHTML = 'Use WASD/Arrow Keys to move, Click to throw shurikens to kill enemy fighters';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/finalninjazero.jpg"></button>
+        <p>Final Ninja Zero</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="f" data-category="twoplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Fireboy-Watergirl-Forest-Temple/index.html');
+        document.getElementById('gametitle').innerHTML = 'Fireboy & Watergirl: In The Forest Temple';
+        document.getElementById('developer').innerHTML = 'Oslo Albet';
+        document.getElementById('instructions').innerHTML = 'Use WASD/Arrow Keys to control the two characters you use to pass each level';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/fireboywatergirlforesttemple.jpg"></button>
+        <p>Fireboy & Watergirl Forest Temple</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="f" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Flappy-Bird/index.html');
+        document.getElementById('gametitle').innerHTML = 'Flappy Bird';
+        document.getElementById('developer').innerHTML = 'Dong Nguyen';
+        document.getElementById('instructions').innerHTML = 'Click to flap, and dodge the pipes so you can travel as far as possible';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/Flappybird.jpg"></button>
+        <p>Flappy Bird</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="f" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/Flip-Bottle/index.html');
+        document.getElementById('gametitle').innerHTML = 'Flip Bottle';
+        document.getElementById('developer').innerHTML = 'BPTop';
+        document.getElementById('instructions').innerHTML = 'Click to flip the bottle. Try to pass each challenging level to win';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/flipbottle.jpg"></button>
+        <p>Flip Bottle</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="f" data-category="singleplayer">
+        <button onclick="embedGame('https://sussygamedeveloper.github.io/FNAF1/');
+        document.getElementById('gametitle').innerHTML = 'Five Nights At Freddys';
+        document.getElementById('developer').innerHTML = 'Scott Cawthon';
+        document.getElementById('instructions').innerHTML = 'Use your mouse to control your character and survive all five nights in this house';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/fnaf.jpg"></button>
+        <p>FNAF</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="f" data-category="singleplayer">
+        <button onclick="embedGame('https://sussygamedeveloper.github.io/FNAF2/');
+        document.getElementById('gametitle').innerHTML = 'Five Nights At Freddys 2';
+        document.getElementById('developer').innerHTML = 'Scott Cawthon';
+        document.getElementById('instructions').innerHTML = 'Use your mouse to control your character and survive all five nights in this house';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/fnaf2.jpg"></button>
+        <p>FNAF 2</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="f" data-category="singleplayer">
+        <button onclick="embedGame('https://sussygamedeveloper.github.io/fnaf3/');
+        document.getElementById('gametitle').innerHTML = 'Five Nights At Freddys 3';
+        document.getElementById('developer').innerHTML = 'Scott Cawthon';
+        document.getElementById('instructions').innerHTML = 'Use your mouse to control your character and survive all five nights in this house';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/fnaf3.jpg"></button>
+        <p>FNAF 3</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="f" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/FNAF-4/index.html');
+        document.getElementById('gametitle').innerHTML = 'Five Nights At Freddys 4';
+        document.getElementById('developer').innerHTML = 'Scott Cawthon';
+        document.getElementById('instructions').innerHTML = 'Use your mouse to control your character and survive all five nights in this house';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/fnaf4.jpg"></button>
+        <p>FNAF 4</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="f" data-category="singleplayer">
+        <button onclick="embedGame('/File-Games/Gfiles/FNAW/index.html');
+        document.getElementById('gametitle').innerHTML = 'Five Nights At Winstons';
+        document.getElementById('developer').innerHTML = 'lax1dude';
+        document.getElementById('instructions').innerHTML = 'Use your mouse to control your character and survive all five nights in FNAF spinoff game';
+        document.documentElement.scrollTop = 0;">
+        <img class="gameicon" loading="lazy" src="Game-icons/fivenightsatwinstons.jpg"></button>
+        <p>Five Nights At Winstons</p>
+      </div>
+
+      <div class="fullscreendiv" data-letter="f" data-category="music">
+        <button onclick="embedGame('https://v6p9d9t4.ssl.hwcdn.net/html/2876359-359162/index.html');
+        document.getElementById('gametitle').i...
