@@ -1261,6 +1261,13 @@
 },
 {
   "img": "/img/ANOTHER_GAME_IMAGE.png",
+  "name": "Retro Bowl",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "/retro-bowl"
+},
+{
+  "img": "/img/ANOTHER_GAME_IMAGE.png",
   "name": "Slice Sasha",
   "description": "This is another cool game description.",
   "href": "/#/play?9",
