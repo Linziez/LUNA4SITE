@@ -172,7 +172,7 @@
   "name": "Big Tower",
   "description": "This is another cool game description.",
   "href": "/#/play?9",
-  "embed": "/bntts"
+  "embed": "embed.html#https://ubg98.github.io/BigTowerTinySquare/"
 },
 {
   "img": "/img/ANOTHER_GAME_IMAGE.png",
