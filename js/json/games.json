@@ -386,6 +386,13 @@
 },
 {
   "img": "/img/IMG_1225.png",
+  "name": "Eggy Car",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "embed.html#https://webglmath.github.io/eggy-car"
+},
+{
+  "img": "/img/IMG_1225.png",
   "name": "Factory Balls",
   "description": "This is another cool game description.",
   "href": "/#/play?9",
