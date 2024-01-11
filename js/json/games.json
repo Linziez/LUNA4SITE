@@ -805,6 +805,13 @@
   "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=jumpix2.swf"
 },
 {
+  "img": "/img/IMG_1404.png",
+  "name": "JustFall.lol",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "/just"
+},
+{
   "img": "/img/IMG_1289.jpeg",
   "name": "Knightmare",
   "description": "This is another cool game description.",
