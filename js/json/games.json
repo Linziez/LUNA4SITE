@@ -763,6 +763,27 @@
   "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=houseofwolves.swf"
 },
 {
+  "img": "/img/IMG_1451.jpeg",
+  "name": "Henry Stickman",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "embed.html#https://cyamanz.pages.dev/play/flash/?swf=Henry%20Stickmin%20-%20Breaking%20the%20Bank.swf"
+},
+{
+  "img": "/img/IMG_1282.jpeg",
+  "name": "Henry Stickman 2",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "embed.html#https://cyamanz.pages.dev/play/flash/?swf=Henry%20Stickmin%20-%20Escaping%20the%20Prison.swfhttps://cyamanz.pages.dev/play/flash/?swf=Henry%20Stickmin%20-%20Escaping%20the%20Prison.swf"
+},  
+{
+  "img": "/img/IMG_1282.jpeg",
+  "name": "Henry Stickman 3",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "embed.html#https://cyamanz.pages.dev/play/flash/?swf=Henry%20Stickmin%20-%20Stealing%20the%20Diamond.swf"
+},
+{
   "img": "/img/IMG_1283.jpeg",
   "name": "Interactive Buddy",
   "description": "This is another cool game description.",
