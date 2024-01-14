@@ -91,6 +91,13 @@
   "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=americanracing1.swf"
 },
 {
+  "img": "/img/IMG_1184.jpeg",
+  "name": "A Dark Room",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": ""
+},
+{
   "img": "/img/IMG_1185.jpeg",
   "name": "Battle Panic",
   "description": "This is another cool game description.",
@@ -1329,6 +1336,13 @@
   "href": "/#/play?9",
   "embed": "/retro-bowl"
 },
+{
+  "img": "/img/IMG_1456.jpeg",
+  "name": "Rooftop Snipers",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/rooftop-snipers/index.html"
+},  
 {
   "img": "/img/IMG_1310.jpeg",
   "name": "Slice Sasha",
