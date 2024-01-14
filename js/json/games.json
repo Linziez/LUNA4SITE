@@ -175,6 +175,13 @@
   "embed": "embed.html#https://ubg98.github.io/BigTowerTinySquare/"
 },
 {
+  "img": "/img/IMG_1455.jpeg",
+  "name": "Basketball Legends",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/basketball-stars/index.html"
+},
+{
   "img": "/img/IMG_1197.jpeg",
   "name": "Causality",
   "description": "This is another cool game description.",
@@ -677,6 +684,13 @@
   "description": "This is another cool game description.",
   "href": "/#/play?9",
   "embed": "embed.html#https://now.gg/play/epic-games/7308/fortnite.html"
+},
+{
+  "img": "/img/IMG_1454.png",
+  "name": "Fireboy And WaterGirl",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/fireboy/index.html"
 },
 {
   "img": "/img/IMG_1272.webp",
