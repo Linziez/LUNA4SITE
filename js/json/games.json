@@ -189,6 +189,13 @@
   "embed": "games/basketball-stars/index.html"
 },
 {
+  "img": "/img/IMG_1458.jpeg",
+  "name": "BasketBros",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/basketball-stars/index.html"
+},
+{
   "img": "/img/IMG_1197.jpeg",
   "name": "Causality",
   "description": "This is another cool game description.",
