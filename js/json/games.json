@@ -1400,6 +1400,13 @@
   "embed": "embed.html#https://slay3rzz.github.io/61ff39c5-d773-4b55-badb-4e79ce3e3337/content/games.flying-sheep.com/super-puffer-fish-3d/game2/index.html"
 },
 {
+  "img": "img/IMG_1461.jpeg",
+  "name": "Stick Merge",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "stick-merge/index.html"
+},
+{
   "img": "/img/ANOTHER_GAME_IMAGE.png",
   "name": "Tail Dragon",
   "description": "This is another cool game description.",
@@ -1545,6 +1552,13 @@
   "description": "This is another cool game description.",
   "href": "/#/play?9",
   "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=swordsandsandals2.swf"
+},
+{
+  "img": "/img/IMG_1460.webp",
+  "name": "Skribbl.io",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "embed.html#https://skribbl.io"
 },
 {
   "img": "/img/IMG_1246.jpeg",
