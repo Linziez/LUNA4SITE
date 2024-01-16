@@ -147,11 +147,32 @@
   "embed": "games/a-dance-of-fire-and-ice/index.html"
 },
 {
-  "img": "/img/new-game.png",
-  "name": "New Game",
+  "img": "/img/IMG_1471.jpeg",
+  "name": "amidst the clouds",
   "description": "A new and exciting game!",
   "href": "/#/play?4",
-  "embed": "games/new-game/index.html"
+  "embed": "games/amidst-the-clouds/index.html"
+},
+{
+  "img": "/img/IMG_1472.jpeg",
+  "name": "Angry Sharks",
+  "description": "A new and exciting game!",
+  "href": "/#/play?4",
+  "embed": "games/angry-sharks/index.html"
+},
+{
+  "img": "/img/IMG_1473.png",
+  "name": "astray",
+  "description": "A new and exciting game!",
+  "href": "/#/play?4",
+  "embed": "games/astray/index.html"
+},
+{
+  "img": "/img/avalanche.png",
+  "name": "Avalanche",
+  "description": "A new and exciting game!",
+  "href": "/#/play?4",
+  "embed": "games/"
 },
 {
   "img": "/img/IMG_1185.jpeg",
