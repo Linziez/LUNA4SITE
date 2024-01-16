@@ -172,7 +172,35 @@
   "name": "Avalanche",
   "description": "A new and exciting game!",
   "href": "/#/play?4",
-  "embed": "games/"
+  "embed": "games/avalanche/index.html"
+},
+{
+  "img": "/img/IMG_1474.jpeg",
+  "name": "Bacon May Die",
+  "description": "A new and exciting game!",
+  "href": "/#/play?4",
+  "embed": "games/bacon-may-die/index.html"
+},
+{
+  "img": "/img/bad-ice-cream-2.png",
+  "name": "Bad IceCream 2",
+  "description": "A new and exciting game!",
+  "href": "/#/play?4",
+  "embed": "games/bad-ice-cream-2/index.html"
+},
+{
+  "img": "/img/bad-ice-cream-3.png",
+  "name": "Bad IceCream 3",
+  "description": "A new and exciting game!",
+  "href": "/#/play?4",
+  "embed": "games/bad-ice-cream-3/index.html"
+},
+{
+  "img": "games/bad-ice-cream/bad-ice-cream.png",
+  "name": "Bad IceCream",
+  "description": "A new and exciting game!",
+  "href": "/#/play?4",
+  "embed": "games/bad-ice-cream/index.html"
 },
 {
   "img": "/img/IMG_1185.jpeg",
