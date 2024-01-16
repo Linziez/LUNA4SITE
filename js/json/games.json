@@ -1001,6 +1001,13 @@
   "embed": "embed.html#https://slay3rzz.github.io/ca2cd940-b69b-43fc-b330-9b25b98be6f4/content/static.playunblocked.com/2021/12/mari0/index.html"
 },
 {
+  "img": "/img/IMG_1465.png",
+  "name": "Monkey Mart",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/monkeymart/index.html"
+},
+{
   "img": "/img/IMG_1361.webp",
   "name": "Nanotube",
   "description": "This is another cool game description.",
