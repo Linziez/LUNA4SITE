@@ -203,6 +203,48 @@
   "embed": "games/bad-ice-cream/index.html"
 },
 {
+  "img": "games/balldodge/splash.jpeg",
+  "name": "Balldodge",
+  "description": "A new and exciting game!",
+  "href": "/#/play?4",
+  "embed": "games/balldodge/balldodge.html"
+},
+{
+  "img": "games//balldodge/splash.jpeg",
+  "name": "Ballistic Chickens",
+  "description": "A new and exciting game!",
+  "href": "/#/play?4",
+  "embed": "games/ballistic-chickens/index.html"
+},
+{
+  "img": "games/basket-random/splash.jpeg",
+  "name": "Basket Random",
+  "description": "A new and exciting game!",
+  "href": "/#/play?4",
+  "embed": "games/basket-random/index.html"
+},
+{
+  "img": "games/battleforgondor/battleforgondor.JPG",
+  "name": "Battle For Gondor",
+  "description": "A new and exciting game!",
+  "href": "/#/play?4",
+  "embed": "games/battleforgondor/index.html"
+},
+{
+  "img": "games/bigredbutton/bigredbutton.png",
+  "name": "Big Red Button",
+  "description": "A new and exciting game!",
+  "href": "/#/play?4",
+  "embed": "games/bigredbutton/index.html"
+},
+{
+  "img": "games/blacholesquare/icon.png",
+  "name": "Blacholessquare",
+  "description": "A new and exciting game!",
+  "href": "/#/play?4",
+  "embed": "games/blacholesquare/index.html"
+},
+{
   "img": "/img/IMG_1185.jpeg",
   "name": "Battle Panic",
   "description": "This is another cool game description.",
