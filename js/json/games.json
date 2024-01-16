@@ -427,14 +427,14 @@
   "embed": "games/champion-island/index.html"
 },
 {
-  "img": "games/champion-island/splash.png",
+  "img": "games/championarcher/championarcher.png",
   "name": "championarcher",
   "description": "This is another cool game description.",
   "href": "/#/play?9",
   "embed": "games/championarcher"
 },
 {
-  "img": "games/champion-island/splash.png",
+  "img": "games/chill-radio/img/chill-logo.png",
   "name": "chill-radio",
   "description": "This is another cool game description.",
   "href": "/#/play?9",
