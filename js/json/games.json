@@ -28,6 +28,48 @@
     "embed": "embed.html#https://slay3rzz.github.io/fa766670-f59d-4b2f-af24-0017ea34eb70/content/geekygames.github.io/2048/index.html"
   },
   {
+    "img": "/img/IMG_1466.jpeg",
+    "name": "2048 multi",
+    "description": "10 Minutes Till Dawn is an action bullet-hell roguelite game to attack the enemies and survive for 10 minutes!",
+    "id": "4",
+    "embed": "2048-multitask/index.html"
+  },
+  {
+  "img": "/img/IMG_1467.jpeg",
+  "name": "9007199254740992",
+  "description": "New Game Description",
+  "href": "9",
+  "embed": "games/9007199254740992"
+},
+{
+  "img": "/img/IMG_1468.jpeg",
+  "name": "99balls",
+  "description": "New Game Description",
+  "href": "3",
+  "embed": "games/99balls/index.html"
+},
+{
+  "img": "/img/IMG_4986.png",
+  "name": "8ball",
+  "description": "This is another cool game description.",
+  "href": "/#/play?1",
+  "embed": "embed.html#https://slay3rzz.github.io/8ballbilliardsclassic/index.html"
+},
+{
+  "img": "/img/",
+  "name": "Doge Miner",
+  "description": "This is another cool game description.",
+  "href": "/#/play?1",
+  "embed": "games/DogeMiner/index.html"
+},  
+{
+  "img": "/img/",
+  "name": "Doge Miner 2",
+  "description": "This is another cool game description.",
+  "href": "/#/play?1",
+  "embed": "Dogeminer2/index.html"
+},
+{
   "img": "/img/IMG_4986.png",
   "name": "8ball",
   "description": "This is another cool game description.",
