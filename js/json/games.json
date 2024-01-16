@@ -462,6 +462,118 @@
   "embed": "games/cluster-rush"
 },
 {
+  "img": "games/cnpingpong/tabletennisultimate.png",
+  "name": "CN Pingpong",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/cnpingpong"
+},
+{
+  "img": "games/connect3/favicon.png",
+  "name": "Connect3",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/connect3"
+},
+{
+  "img": "games/connect3/favicon.png",
+  "name": "cookie-clickers",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/"
+},
+{
+  "img": "games/core-ball/pr_source.png",
+  "name": "core-ball",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/core-ball/index.html"
+},
+{
+  "img": "games/creativekillchamber/creativekillchamber.jpg",
+  "name": "Creativekillchamber",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/creativekillchamber/index.html"
+},
+{
+  "img": "games/csgo-clicker/images/case1.png",
+  "name": "CSGO Clicker",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/csgo-clicker/index.html"
+},
+{
+  "img": "/img/IMG_1197.jpeg",
+  "name": "Causality",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=causality.swf"
+},
+{
+  "img": "/img/IMG_1197.jpeg",
+  "name": "",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=causality.swf"
+},
+{
+  "img": "/img/IMG_1197.jpeg",
+  "name": "Causality",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=causality.swf"
+},
+{
+  "img": "/img/IMG_1197.jpeg",
+  "name": "Causality",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=causality.swf"
+},
+{
+  "img": "/img/IMG_1197.jpeg",
+  "name": "Causality",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=causality.swf"
+},
+{
+  "img": "/img/IMG_1197.jpeg",
+  "name": "Causality",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=causality.swf"
+},
+{
+  "img": "/img/IMG_1197.jpeg",
+  "name": "Causality",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=causality.swf"
+},
+{
+  "img": "/img/IMG_1197.jpeg",
+  "name": "Causality",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=causality.swf"
+},
+{
+  "img": "/img/IMG_1197.jpeg",
+  "name": "Causality",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=causality.swf"
+},
+{
+  "img": "/img/IMG_1197.jpeg",
+  "name": "Causality",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=causality.swf"
+},
+{
   "img": "/img/IMG_1197.jpeg",
   "name": "Causality",
   "description": "This is another cool game description.",
