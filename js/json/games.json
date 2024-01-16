@@ -1197,11 +1197,11 @@
   "embed": "games/froggys-battle/index.html"
 },
 {
-  "img": "/games/flippy-fish/cwzPGJ.png",
+  "img": "games/fruitninja/FruitNinjaTeaser.jpg",
   "name": "fruit ninja",
   "description": "This is another cool game description.",
   "href": "/#/play?9",
-  "embed": "games/froggys-battle/index.html"
+  "embed": "games/fruitninja/index.html"
 },
 {
   "img": "/img/IMG_1272.webp",
