@@ -1190,6 +1190,20 @@
   "embed": "games/flippy-fish/index.html"
 },
 {
+  "img": "/games/froggys-battle/splash.png",
+  "name": "froggys battle",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/froggys-battle/index.html"
+},
+{
+  "img": "/games/flippy-fish/cwzPGJ.png",
+  "name": "fruit ninja",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/froggys-battle/index.html"
+},
+{
   "img": "/img/IMG_1272.webp",
   "name": "Geo Dash",
   "description": "This is another cool game description.",
