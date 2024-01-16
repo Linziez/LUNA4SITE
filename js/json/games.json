@@ -1148,6 +1148,48 @@
   "embed": "games/fireboy/index.html"
 },
 {
+  "img": "games/flappy plane/flappy plane/E3A4179E-B8E4-4358-BDAD-45AA7637D4D7.jpeg",
+  "name": "Flappy Plane",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/flappy plane"
+},
+{
+  "img": "games/flappy-2048/favicon.ico",
+  "name": "flappy-2048",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/flappy-2048/index.html"
+},
+{
+  "img": "/img/IMG_1489.jpeg",
+  "name": "flappy-bird",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/flappybird/index.html"
+},
+{
+  "img": "/games/flashtetris/flashtetris.png",
+  "name": "flash tetris",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/flashtetris/index.html"
+},
+{
+  "img": "/games/flippy-fish/cwzPGJ.png",
+  "name": "flippy fish",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/flippy-fish/index.html"
+},
+{
+  "img": "/games/flippy-fish/cwzPGJ.png",
+  "name": "flippy fish",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/flippy-fish/index.html"
+},
+{
   "img": "/img/IMG_1272.webp",
   "name": "Geo Dash",
   "description": "This is another cool game description.",
