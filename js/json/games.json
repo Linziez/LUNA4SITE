@@ -392,6 +392,76 @@
   "embed": "games/bitlife/index.html"
 },
 {
+  "img": "/img/games/burger-and-frights/logo.png",
+  "name": "Burgers And Frights",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/burger-and-frights"
+},
+{
+  "img": "games/cannon-basketball-4/img/splash.png",
+  "name": "cannon-basketball-4",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/cannon-basketball-4/index.html"
+},
+{
+  "img": "/img/canyondefense/canyondefense.png",
+  "name": "canyondefense",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/canyondefense/index.html"
+},
+{
+  "img": "/games/cell-machine/img/icon.png",
+  "name": "cell-machine",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/cell-machine/index.html"
+},
+{
+  "img": "games/champion-island/splash.png",
+  "name": "champion-island",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/champion-island/index.html"
+},
+{
+  "img": "games/champion-island/splash.png",
+  "name": "championarcher",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/championarcher"
+},
+{
+  "img": "games/champion-island/splash.png",
+  "name": "chill-radio",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/chill-radio/index.html"
+},
+{
+  "img": "games/circlo/img/icon.png",
+  "name": "circlo",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/circlo"
+},
+{
+  "img": "games/",
+  "name": "classicube",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/classicube/index36fc.html"
+},
+{
+  "img": "games/cluster-rush/splash.png",
+  "name": "Cluster Rush",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/cluster-rush"
+},
+{
   "img": "/img/IMG_1197.jpeg",
   "name": "Causality",
   "description": "This is another cool game description.",
