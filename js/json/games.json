@@ -140,6 +140,20 @@
   "embed": "games/adarkroom"
 },
 {
+  "img": "/img/IMG_1470.jpeg",
+  "name": "a-dance-of-fire-and-ice",
+  "description": "A new and exciting game!",
+  "href": "/#/play?4",
+  "embed": "games/a-dance-of-fire-and-ice/index.html"
+},
+{
+  "img": "/img/new-game.png",
+  "name": "New Game",
+  "description": "A new and exciting game!",
+  "href": "/#/play?4",
+  "embed": "games/new-game/index.html"
+},
+{
   "img": "/img/IMG_1185.jpeg",
   "name": "Battle Panic",
   "description": "This is another cool game description.",
