@@ -1379,6 +1379,20 @@
   "embed": "embed.html#https://cyamanz.pages.dev/play/flash/?swf=Henry%20Stickmin%20-%20Stealing%20the%20Diamond.swf"
 },
 {
+  "img": "/games/happywheels/b.png",
+  "name": "Happy Wheels",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/happywheels"
+},
+{
+  "img": "/games/hill-climb-racing/splash.jpeg",
+  "name": "hill-climb-racing",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/hill-climb-racing"
+},
+{
   "img": "/img/IMG_1283.jpeg",
   "name": "Interactive Buddy",
   "description": "This is another cool game description.",
