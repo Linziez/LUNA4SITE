@@ -1575,6 +1575,13 @@
   "embed": "games/monkeymart/index.html"
 },
 {
+  "img": "/games/merge-round-racers/splash.png",
+  "name": "Merge Round Racers",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/merge-round-racers/index.html"
+},
+{
   "img": "/img/IMG_1361.webp",
   "name": "Nanotube",
   "description": "This is another cool game description.",
