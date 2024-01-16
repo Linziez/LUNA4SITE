@@ -749,7 +749,7 @@
   "embed": "games/draw-the-hill/index.html"
 },
 {
-  "img": "games/drive-mad/favicon.ico",
+  "img": "img/IMG_1488.jpeg",
   "name": "drive-mad",
   "description": "This is another cool game description.",
   "href": "/#/play?9",
@@ -817,6 +817,41 @@
   "description": "This is another cool game description.",
   "href": "/#/play?9",
   "embed": "embed.html#https://webglmath.github.io/eggy-car"
+},
+{
+  "img": "games/edge-surf/splash.png",
+  "name": "Edge Surf",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/edge-surf/index.html"
+},
+{
+  "img": "games/edgenotfound/edge.png",
+  "name": "edgenotfound",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/edgenotfound/index.html"
+},
+{
+  "img": "games/endlesswar3/endlesswar3.png",
+  "name": "endlesswar3",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/endlesswar3/index.html"
+},
+{
+  "img": "games/evil-glitch/icon.jpeg",
+  "name": "evil-glitch",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/evil-glitch/index.html"
+},
+{
+  "img": "games/edgenotfound/edge.png",
+  "name": "",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/edgenotfound/index.html"
 },
 {
   "img": "/img/IMG_1225.png",
