@@ -1302,6 +1302,41 @@
   "embed": "games/getaway-shootout"
 },
 {
+  "img": "games/gimme-the-airpod/img/logo.png",
+  "name": "gimme-the-airpod",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/gimme-the-airpod/index.html"
+},
+{
+  "img": "games/go-ball/game.jpg",
+  "name": "go-ball",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/go-ball/index.html"
+},
+{
+  "img": "games/google-feud/splash.png",
+  "name": "google feud",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/google-feud/index.html"
+},
+{
+  "img": "games/gravity-soccer/splash.png",
+  "name": "gravity soccer",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/gravity-soccer"
+},
+{
+  "img": "games/grindcraft/img/splash.png",
+  "name": "grindcraft",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/grindcraft/index.html"
+},
+{
   "img": "/img/IMG_1280.png",
   "name": "Hanger",
   "description": "This is another cool game description.",
