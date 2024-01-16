@@ -67,7 +67,7 @@
   "name": "Doge Miner 2",
   "description": "This is another cool game description.",
   "href": "/#/play?1",
-  "embed": "Dogeminer2/index.html"
+  "embed": "games/Dogeminer2/index.html"
 },
 {
   "img": "/img/IMG_4986.png",
@@ -1132,6 +1132,13 @@
   "description": "This is another cool game description.",
   "href": "/#/play?9",
   "embed": "embed.html#https://slay3rzz.github.io/ovo3/index.html"
+},
+{
+  "img": "/img/new-game.png",
+  "name": "Offline Paradise",
+  "description": "A new and exciting game!",
+  "href": "/#/play?4",
+  "embed": "games/OfflineParadise/index.html"
 },
 {
   "img": "/img/IMG_1349.webp",
