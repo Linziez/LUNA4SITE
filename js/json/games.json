@@ -504,74 +504,18 @@
   "embed": "games/csgo-clicker/index.html"
 },
 {
-  "img": "/img/IMG_1197.jpeg",
-  "name": "Causality",
+  "img": "/img/",
+  "name": "Cubefield",
   "description": "This is another cool game description.",
   "href": "/#/play?9",
-  "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=causality.swf"
+  "embed": "games/cubefield"
 },
 {
   "img": "/img/IMG_1197.jpeg",
-  "name": "",
+  "name": "cupcake2048",
   "description": "This is another cool game description.",
   "href": "/#/play?9",
-  "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=causality.swf"
-},
-{
-  "img": "/img/IMG_1197.jpeg",
-  "name": "Causality",
-  "description": "This is another cool game description.",
-  "href": "/#/play?9",
-  "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=causality.swf"
-},
-{
-  "img": "/img/IMG_1197.jpeg",
-  "name": "Causality",
-  "description": "This is another cool game description.",
-  "href": "/#/play?9",
-  "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=causality.swf"
-},
-{
-  "img": "/img/IMG_1197.jpeg",
-  "name": "Causality",
-  "description": "This is another cool game description.",
-  "href": "/#/play?9",
-  "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=causality.swf"
-},
-{
-  "img": "/img/IMG_1197.jpeg",
-  "name": "Causality",
-  "description": "This is another cool game description.",
-  "href": "/#/play?9",
-  "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=causality.swf"
-},
-{
-  "img": "/img/IMG_1197.jpeg",
-  "name": "Causality",
-  "description": "This is another cool game description.",
-  "href": "/#/play?9",
-  "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=causality.swf"
-},
-{
-  "img": "/img/IMG_1197.jpeg",
-  "name": "Causality",
-  "description": "This is another cool game description.",
-  "href": "/#/play?9",
-  "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=causality.swf"
-},
-{
-  "img": "/img/IMG_1197.jpeg",
-  "name": "Causality",
-  "description": "This is another cool game description.",
-  "href": "/#/play?9",
-  "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=causality.swf"
-},
-{
-  "img": "/img/IMG_1197.jpeg",
-  "name": "Causality",
-  "description": "This is another cool game description.",
-  "href": "/#/play?9",
-  "embed": "embed.html#https://cyamanz.github.io/play/flash/?swf=causality.swf"
+  "embed": "games/cupcake2048"
 },
 {
   "img": "/img/IMG_1197.jpeg",
@@ -726,6 +670,90 @@
   "description": "This is another cool game description.",
   "href": "/#/play?9",
   "embed": "embed.html#https://ozkl.github.io/doomgeneric/"
+},
+{
+  "img": "games/dante/splash.png",
+  "name": "dante",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/dante/index.html"
+},
+{
+  "img": "/img/deal-or-no-deal/index.jpg",
+  "name": "deal-or-no-deal",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/deal-or-no-deal/index.html"
+},
+{
+  "img": "/img/deal-or-no-deal/index.jpg",
+  "name": "death run 3d",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/death-run-3d/index.html"
+},
+{
+  "img": "/img/deepest-sword/splash.jpg",
+  "name": "deepest sword",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/deepest-sword/index.html"
+},
+{
+  "img": "games/dodge/splash.jpeg",
+  "name": "dodge",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "dodge/dodge.html"
+},
+{
+  "img": "games/doge2048/favicon.png",
+  "name": "doge2048",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/doge2048"
+},
+{
+  "img": "games/doodle-jump/doodle.png",
+  "name": "doodle-jump",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/doodle-jump/index.html"
+},
+{
+  "img": "games/doom/splash.jpeg",
+  "name": "Doom",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "doom/doom.html"
+},
+{
+  "img": "games/doublewires/doublewires.png",
+  "name": "doublewires",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/doublewires/index.html"
+},
+{
+  "img": "games/dragon-vs-bricks/splash.png",
+  "name": "dragon-vs-bricks",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/dragon-vs-bricks/index.html"
+},
+{
+  "img": "games/draw-the-hill/icons/icon-512.png",
+  "name": "draw-the-hill",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/draw-the-hill/index.html"
+},
+{
+  "img": "games/drive-mad/favicon.ico",
+  "name": "drive-mad",
+  "description": "This is another cool game description.",
+  "href": "/#/play?9",
+  "embed": "games/drive-mad/index.html"
 },
 {
   "img": "/img/IMG_1218.png",
